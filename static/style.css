@@ -3,6 +3,20 @@ body { padding-top: 56px; }
 .bg-dark { background-color: #343a40 !important; }
 .bg-hero { background-color: #7952b3; }
 
+/* SIDE COLUMN FIX */
+/* ---------------- */
+.col-3 {
+  font-size: 0.75rem;
+  width: fit-content;
+}
+
+.dropdown {
+  max-height: 40vh;
+  overflow: scroll;
+}
+
+
+/* --------------- */
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
@@ -199,6 +213,175 @@ transform: translate(-50%, -50%); */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+/* START OF TEAM PAGE STYLES */
+/* ---------------------------------------------------------------------------- */
+.team-container-RL {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: inherit;
+  height: 230px;
+  /* background-color: #d9534f; */
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  background-color: #f4f7df;
+  border-radius: 10px;
+
+}
+
+.team-container-LR {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  width: inherit;
+  height: 230px;
+  /* background-color: #d9534f; */
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+
+  background-color: #f4f7df;
+
+
+}
+
+.team-container-card-desc {
+
+  font-size: 0.8rem;
+  margin-top: 5%;
+}
+
+.team-container-card-heading {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.team-container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 30%;
+  /* background-color: #5bc0de; */
+}
+
+.team-container-card-para {
+  justify-self: flex-end;
+  width: 60%;
+
+}
+
+.team-container-card-image {
+  width: auto;
+  height: fit-content;
+  max-width: 100%;
+  min-width: 70%;
+  max-height: 90%;
+  min-height: 60%;
+  justify-self: flex-start;
+  border-radius: 15px;
+}
+
+.team-container-card2 {
+  /* background-color: chartreuse; */
+  align-self: flex-start;
+  width: 60%;
+  height: inherit;
+
+
+}
+
+/* END OF TEAM PAGE STYLES */
+/* ----------------------------------------------------------------------- */
+/* LOADING ANIMATION STYLES*/
+.postloader {
+  display: none !important;
+}
+
+.display_change {
+  display: block !important;
+}
+
+.wrapper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  position: fixed;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  margin-left: 50vw;
+  margin-right: 50vw;
+  transform: translate(0, -50%);
+  width: 20vw;
+  height: 20vh;
+}
+
+.content {
+  display: none !important;
+}
+
+#Rotor {
+  animation: rotor 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Eye1 {
+  animation: eyes 4s infinite ease-in;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Eye2 {
+  animation: eyes 4s infinite ease-in;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes eyes {
+  0% {
+    transform: scale(1);
+  }
+
+  1% {
+    transform: scale(0);
+  }
+
+  10% {
+    transform: scale(0);
+  }
+
+  11% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotor {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* END OF LOADING ANIMATION STYLES */
 
 @-webkit-keyframes slideIn {
     100% { left: 0; }
