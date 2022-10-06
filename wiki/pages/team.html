@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -5,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
-
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
     <!-- Bootstrap CSS -->
 <!--    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet"> -->
 <link href="../../static/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
 <!--    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">-->
 <link href="../../static/style.css" rel="stylesheet">
-
-    <title> Team | IISER_TVM - iGEM 2022</title>
+<link href="../../static/style/modal.css" rel="stylesheet">
+    
+    <title>Human Practices | IISER_TVM - iGEM 2022</title>
 
 </head>
 
-<body>
-
+<body style="background-color: #fdfff0">
+<div class="progress-bar">
+  <div class="progress-bar-loader">
+    
+  </div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
 
@@ -115,36 +123,260 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<header class="masthead" style= background:url("../../static/images/woman.png"); id="alder">
+
+</header>
+
+<div class="cointainer my-4 mx-4">
   <div class="row">
-    <div class="col-8">
-      <h2>What should this page contain?</h2>
-      <hr>
-      <ul>
-        <li>Include pictures of your teammates, don't forget instructors and advisors!</li>
-        <li>You can add a small biography or a few words from each team member, to tell us what you like, and what motivated you to participate in iGEM.</li>
-        <li>Take team pictures! Show us your school, your lab and little bit of your city.</li>
-        <li>Remember that image galleries can help you showcase many pictures while saving space.</li>
+    <div class="col-3">
+      <ul class="list-group fixed-content" id="sidenav">
+        <ul class="navbar-links">
+          
+          <li class="navbar-dropdown list-group-item list-group-item-action">
+            <a class="" href=#four>Principal Investigators</a>
+            <div class="dropdown">
+              <a href="#">Prof. S Murthy Srinivasula</a>
+              <a href="#">Dr. Sandhya Ganeshan</a>
+      
+            </div>
+          </li>
+          <li class="navbar-dropdown list-group-item list-group-item-action">
+            <a class="" href=#ihp>Team Members</a>
+            <div class="dropdown">
+              <a href="#">Sneha P R</a>
+              <a href="#">Ira Zibbu</a>
+              <a href="#">Parth Ankam</a>
+              <a href="#">Kapavarapu Pratham</a>
+              <a href="#">Harshini Shivagnanam</a>
+              <a href="#">Ananya Aravind</a>
+              <a href="#">Pranav Thapron</a>
+              <a href="#">Siddharth Kurne</a>
+              <a href="#">Riya Shende</a>
+              <a href="#">Gopal Kulkarni</a>
+              <a href="#">Jyothilakshmi S</a>
+              <a href="#">Kavya S</a>
+              <a href="#">Merina Tony</a>
+            </div>
+          </li>
+
+          </li>
+        </ul>
       </ul>
-      <div class="bd-callout bd-callout-info"><strong>Important:</strong> Your wiki pages will be archived at the end of the iGEM season and this content will remain online. Please keep this in mind as you post photos and personal information on this page.</div>
+  </div>
+
+
+
+    <div data-bs-target="sidenav" data-bs-spy="scroll" class="col-9" style="padding-top: 20px" >
+      <div class="container " data-bs-spy="scroll"  data-bs-offset="-200px"   >
+        <h1 id="overview" style="color: #002147">Principal investigators</h1>
+        <br>
+        <div class="team-container-RL">
+          <div class="team-container-card">
+            <img src="../../static/images/SMS.jpg" alt="" class="team-container-card-image">
+          
+          </div>
+          <div class="team-container-card2">
+            <p class="team-container-card-heading"> Prof. S Murthy Srinivasula</p>
+            <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+          </div>
+        </div>
+
+        <div class="team-container-LR">
+          <div class="team-container-card">
+            <img src="../../static/images/Sandhya_mam.jpg" alt="" class="team-container-card-image">
+
+          </div>
+          <div class="team-container-card2">
+            <p class="team-container-card-heading"> Dr. Sandhya Ganeshan</p>
+            <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+          </div>
+        </div>
+        <p>
+          They played an instrumental role in our progress so far
+        </p>
+        <br>
+
+        <h1 id="four" style="color: #002147">Team Members</h1>
+        <br>
+                <br>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Sneha.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading"> Sneha P R</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Ira.png" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading"> Ira Zibbu</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Parth.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading"> Parth Ankam</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Pratham.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading"> Kapavarapu Pratham</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Harshini.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Harshini Shivagnanam</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Ananya.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Ananya Aravind</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Pranav.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Pranav Thapron</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Devashish.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Devashish Kalmegh</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Siddharth.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Siddharth Kurne</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Riya.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Riya Shende</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Gopal.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Gopal Kulkarni</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Jyothi.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Jyothilakshmi S</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                <div class="team-container-RL">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Kavya.jpg" alt="" class="team-container-card-image">
+                  
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Kavya S</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+        
+                <div class="team-container-LR">
+                  <div class="team-container-card">
+                    <img src="../../static/images/Merina.jpg" alt="" class="team-container-card-image">
+        
+                  </div>
+                  <div class="team-container-card2">
+                    <p class="team-container-card-heading">Merina Tony</p>
+                    <p class="team-container-card-desc"> fill in anything you want about them. This includes their likes and dislikes, their contribution to the team etc. etc</p>
+                  </div>
+                </div>
+                
+        
+
+        <br><br>
+      </div>
     </div>
-    <div class="col-4">
-      <h2>Inspirations</h2>
-      <hr>
-      <ul>
-        <li><a href="https://2019.igem.org/Team:CU/Team">2019 CU</a></li>
-        <li><a href="https://2019.igem.org/Team:UANL/Team">2019 UANL</a></li>
-        <li><a href="https://2019.igem.org/Team:William_and_Mary/Team">2019 William and Mary</a></li>
-        <li><a href="https://2020.igem.org/Team:BOKU-Vienna/Team">2020 BOKU Vienna </a></li>
-        <li><a href="https://2020.igem.org/Team:CAU_China/Team_Member">2020 CAU China</a></li>
-        <li><a href="https://2020.igem.org/Team:Lethbridge/Members">2020 Lethbridge</a></li>
-      </ul>
+  </div>
+  <div id="mod-container" class="mod-containercss">
+    <div class="mod-background">
+      <div class="mod">
+        <h2>I'm a Modal</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <svg class="mod-svg" xmlns="" width="100%" height="100%" preserveAspectRatio="none">
+                  <rect x="0" y="0" fill="none" width="1280" height="206" rx="3" ry="3"></rect>
+        </svg>
+      </div>
     </div>
   </div>
 </div>
 
+
+    <script src='../../static/style/modalscript.js'></script>
+    <script  src="../../static/style/modaljs.js"></script>
+
+
 <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
-<footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
+<footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white ">
   <div class="container">
     <div class="row mb-4">
       <div class="col-lg-6 col-xs-12">
@@ -203,6 +435,13 @@
     .wiki-tools-footer img {
         object-fit: contain;
     }
+    header{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #084bc7;
+    height: 10%;
+    padding: 1%;
+  }
 </style>
 
 <section class="wiki-tools-footer container">
@@ -227,9 +466,29 @@
     wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
 </script>
 
+<!--scrollspy-->
+<script>
+  var scrollspy= new bootstrap.ScrollSpy(document.body, {target: "#sidenav"})
+</script>
 
+<script>
+  $(window).on('scroll', function() {
+    a = $(window).scrollTop()
+    b = $(window).height()
+    c = $(document).height()
+
+    var scrollpercent = (a/(c-b))*100
+    $('.progress-bar-loader').css({height:scrollpercent}, 100)
+    console.clear
+    console.log(scrollpercent)
+    console.log(a)
+    console.log(b)
+    console.log(c)
+  })
+</script>
 <!-- Bootstrap Bundle with Popper -->
 <!--<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>-->
 <script src="../../static/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
